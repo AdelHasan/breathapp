@@ -1,15 +1,37 @@
-#container {
-  display: grid;
-  place-content: center;
+.all {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
+/* #container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+
 .circle {
-  background-color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: deepskyblue;
   border-radius: 50%;
   height: 100px;
   width: 100px;
   animation-name: grow;
-  animation-duration: 5s;
+  animation-duration: 10s;
+}
+
+#inputs {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
 }
 
 @keyframes grow {
